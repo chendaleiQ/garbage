@@ -1,0 +1,67 @@
+.main {
+  position: relative;
+  left: 50%;
+  margin-left: -150px;
+  top: 30px;
+  width: 300px;
+  background-color: white;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.main h1 {
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    #06db77 0,
+    #0fc3bd 50%,
+    #14b9dc 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main dl {
+  clear: both;
+  height: 60px;
+  text-align: center;
+}
+
+.main dl dd {
+  height: 100%;
+}
+
+#form {
+  box-shadow: 2px 2px 2px 2px #888;
+}
+
+.inputs,
+.inputs-change {
+  width: 229px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px #06db77;
+}
+
+.inputs,
+.inputs-change:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.inputs-change::-webkit-input-placeholder {
+  color: red;
+}
+
+.submit {
+  width: 230px;
+  height: 35px;
+  font-size: 16px;
+  background-color: #06db77;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}

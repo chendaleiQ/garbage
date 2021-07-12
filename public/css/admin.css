@@ -1,0 +1,31 @@
+.waste > input {
+  border: none;
+  color: red;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.waste > input:nth-child(3) {
+  width: 700px;
+  text-align: center;
+}
+.waste > button > a {
+  /* width: 50px; */
+  color: black;
+  text-align: center;
+}
+.waste form input:nth-child(-n + 2) {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+}
+.waste form input:nth-child(4) {
+  width: 550px;
+  height: 30px;
+}
+.waste form input:nth-child(5) {
+  width: 135px;
+  height: 30px;
+}

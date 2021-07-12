@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href=".public/stylesheets/index.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .content{
+            height: 300px;
+        }
+    </style>
+    <title>主页</title>
+</head>
+
+<body>
+    <div id="top">爱护我们的地球，爱护我们的环境。</div>
+    <div class="body">
+        <div class="topNav">
+            <div class="left">
+                <img src="img/logo.jpg" alt="">
+                <h2>垃圾科学分类，文明你我同行。</h2>
+            </div>
+            <div class="right">
+                <a href="login " id="log">登录</a>
+                <a href="reg" id="reg">注册</a>
+                <a href="admin">管理员登录</a>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/" class="active">首页</a></li>
+                <li><a href="encyclopedias">分类百科</a></li>
+                <li><a href="classification">分类指南</a></li>
+                <li><a href="game">分类小游戏</a></li>
+                <li><a href="person">个人信息</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="container">
+                <ul class="pic">
+                    <li><a href="classification"><img src="img/34.jpg" alt="pic1"></a></li>
+                    <li><a href="classification"><img src="img/35.jpg" alt="pic2"></a></li>
+                    <li><a href="classification"><img src="img/36.jpg" alt="pic3"></a></li>
+                </ul>
+                <ul id="position">
+                    <li class="cur"></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                </ul>
+            </div>
+            <div class="news">
+                <ul>
+                    <li>垃圾分类实施方案来了！山东城市生活</li>
+                    <li>垃圾分类人人参与美好环境人人共享</li>
+                    <li>讲“智慧”用“制度”：杭州萧山探索垃圾分类</li>
+                    <li>《青岛市生活垃圾分类办法》正式公布</li>
+                    <li>垃圾分类该如何对待塑料袋</li>
+                    <li>文明养狗、高空坠物、垃圾分类</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 搜索 -->
+        <div class="select">
+            <form action="http://localhost:3000/selectWastes" method="get">
+                <input placeholder="请输入搜索关键字"  name="wastename" ></input>
+                <input type="submit" value="搜索" class="selectButton"></input>
+            </form>
+            <div class="hot">
+                <ul>
+                    <li>热搜关键词：</li>
+
+                </ul>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <!-- 缩略图 -->
+
+        <div class="thumbnails">
+            <div class="first thumbnailChild">
+                <div class="top">
+                    <h3>其他垃圾</h3>
+                    <a>更多</a>
+                </div>
+                <div class="bottom">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="second thumbnailChild">
+                <div class="top">
+                    <h3>厨余垃圾</h3>
+                    <a>更多</a>
+                </div>
+                <div class="bottom">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="third thumbnailChild">
+                <div class="top">
+                    <h3>有害垃圾</h3>
+                    <a>更多</a>
+                </div>
+                <div class="bottom">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="four thumbnailChild">
+                <div class="top">
+                    <h3>可回收垃圾</h3>
+                    <a>更多</a>
+                </div>
+                <div class="bottom">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-xs-3">
+              <div class="thumbnail">
+                <img src="img/ganlaji.png" alt="干垃圾">
+                <div class="caption">
+                  <h3>干垃圾</h3>
+                  <p>干垃圾是指： 除有害垃圾、可回收 物、湿垃圾以外的其他 生活废弃物
+                    干垃圾主要包括
+                    餐盒、餐巾纸、湿纸巾、卫生间用纸、
+                    塑料袋、 食品包装袋、污染严重的
+                    纸、烟蒂、纸尿裤、 一次性杯子、大骨头、贝壳、花盆、陶瓷等
+                    干垃圾投放要求
+                    * 尽量沥干水分
+                    * 难以辨识类别的生活垃圾投入干垃
+                    圾容器内</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-xs-3">
+                <div class="thumbnail">
+                  <img src="img/shilaji.png" alt="湿垃圾">
+                  <div class="caption">
+                    <h3>湿垃圾</h3>
+                    <p>湿垃圾是指： 日常生活垃圾产生的容 易腐烂的生物质废弃物
+                        湿垃圾主要包括
+                        剩菜剩饭、瓜皮果核、花卉绿植、过期
+                        食品等
+                        湿垃圾投放要求
+                        * 纯流质的食物垃圾，如牛奶等，应
+                        直接倒进下水口
+                        * 有包装物的湿垃圾应将包装物去除
+                        * 后分类投放，包装物请投放到对应
+                        * 的可回收物或干垃圾容器</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-3 col-xs-3">
+                <div class="thumbnail">
+                  <img src="img/youhailaji.png" alt="有害垃圾">
+                  <div class="caption">
+                    <h3>有害垃圾</h3>
+                    <p>有害垃圾是指： 对人体健康或者自然环 境造成直接或潜在危害 的废弃物
+                        有害垃圾主要包括
+                        废电池、油漆桶、荧光灯管、废药品及
+                        其包装物等
+                        有害垃圾投放要求
+                        * 投放时请注意轻放
+                        * 易破损的请连带包装或包裹后轻放
+                        * 如易挥发，请密封后投放</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-md-3 col-xs-3">
+                <div class="thumbnail">
+                  <img src="img/kehuishoulaji.png" alt="可回收物">
+                  <div class="caption">
+                    <h3>可回收物</h3>
+                    <p>可回收物是指： 适宜回收利用和资源化 利用的，如：玻、金、 塑、纸、衣
+                        可回收物主要包括
+                        酱油瓶、玻璃杯、平板玻璃、易拉罐、
+                        饮料瓶、洗发水瓶、塑料玩具、书本、
+                        纸板箱、衣服、床上用品等
+                        可回收物投放要求
+                        * 轻投轻放
+                        * 清洁干燥，避免污染
+                        * 废纸尽量平整
+                        * 立体包装物请清空内容物，清洁后
+                        压扁投放
+                        * 有尖锐边角的，应包裹后投放</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        <!-- 固定宣传 -->
+        <div><img src="img/1.JPEG" id="adverleft" alt="左边"> </div>
+        <div> <img src="img/6.JPEG" id="adverright" alt="右边"></div>
+        
+    </div>
+    <div id="bottom">
+        ©新乡学院 2017级计算机科学与技术1班 李玉华 指导老师：黄楠
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

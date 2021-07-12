@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>分类指南</title>
+</head>
+
+<body>
+    <div id="top">爱护我们的地球，爱护我们的环境。</div>
+    <div class="body">
+        <div class="topNav">
+            <div class="left">
+                <img src="img/logo.jpg" alt="">
+                <h2>垃圾科学分类，文明你我同行。</h2>
+            </div>
+            <div class="right">
+                <a href="login" id="log">登录</a>
+                <a href="reg" id="reg">注册</a>
+            </div>
+            <!-- 搜索 -->
+            <div class="navSelect">
+                <form action="http://localhost:3000/selectWastes" method="get">
+                    <input placeholder="请输入搜索关键字"  name="wastename" ></input>
+                    <input type="submit" value="搜索" class="selectButton"></input>
+                </form>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/" class="active">首页</a></li>
+                <li><a href="encyclopedias">分类百科</a></li>
+                <li><a href="classification">分类指南</a></li>
+                <li><a href="game">分类小游戏</a></li>
+                <li><a href="person">个人信息</a></li>
+            </ul>
+        </div>
+    
+        <div class="list">
+            <div class="rows">
+                <div class="left"><img src=" img/kehuishou.png" alt=""></div>
+                <div>
+                    <div class="riList">
+                        <h1>可回收物是指：</h1>
+                        <p>可回收物就是再生资源、指生活垃圾中未经污染、适宜回收循环利用的废物、主要包括飞起电器电子产品、废纸张、废玻璃、废金属等五类，是现阶段生活垃圾分类的主要工作和影响垃圾质量的重要因素。
+                        </p>
+                    </div>
+                    <div class="right1 rights">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="rows">
+                <div class="left"><img src=" img/qita.png" alt=""></div>
+                <div>
+                    <div class="riList">
+                        <h1>其他垃圾是指：</h1>
+                        <p>其他垃圾，指除可回收物、有害垃圾、厨余垃圾外的其他生活垃圾，即现环卫体系主要收集和处理的垃圾。
+                        </p>
+                    </div>
+
+                    <div class="right2 rights">
+
+                    </div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="left"><img src=" img/chuyu.png" alt=""></div>
+                <div>
+                    <div class="riList">
+                        <h1>厨余垃圾是指：</h1>
+                        <p>居民日常生活及食品加工、饮食服务、单位供餐等活动中产生的垃圾，包括丢弃不用的菜叶、剩菜、剩饭、果皮、果壳、茶渣、骨头等，其主要来源为家庭厨房、餐厅、饭店、食堂、市场及其他与食品加工有关的行业。
+                        </p>
+                    </div>
+
+                    <div class="right3 rights">
+
+                    </div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="left"><img src=" img/youhai.png" alt=""></div>
+                <div>
+                    <div class="riList">
+                        <h1>有害垃圾是指：</h1>
+                        <p>有害垃圾，指生活垃圾中对人体健康或自然环境造成直接或潜在危害的物质，必须单独收集、运输、存储，由环保部门认可的专业机构进行特殊安全处理。
+                        </p>
+                    </div>
+
+                    <div class="right4 rights">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/classification.js"></script>
+    
+</body>
+
+</html>

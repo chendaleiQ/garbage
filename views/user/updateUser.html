@@ -1,0 +1,68 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-04-29 10:53:36
+ * @LastEditTime: 2021-05-03 16:54:48
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \lyh-project (1)\views\user\updateUser.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>主页</title>
+</head>
+
+<body>
+    <div id="top">爱护我们的地球，爱护我们的环境。</div>
+    <div class="body">
+        <div class="topNav">
+            <div class="left">
+                <img src="img/logo.jpg" alt="">
+                <h2>垃圾科学分类，文明你我同行。</h2>
+            </div>
+            <div class="right">
+                <a href="login" id="log">登录</a>
+                <a href="reg" id="reg">注册</a>
+            </div>
+            <!-- 搜索 -->
+            <div class="navSelect">
+                <form action="http://localhost:3000/selectWastes" method="get">
+                    <input placeholder="请输入搜索关键字"  name="wastename" ></input>
+                    <input type="submit" value="搜索" class="selectButton"></input>
+                </form>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/" class="active">首页</a></li>
+                <li><a href="encyclopedias">分类百科</a></li>
+                <li><a href="classification">分类指南</a></li>
+                <li><a href="game">分类小游戏</a></li>
+                <li><a href="person">个人信息</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="updatePersonal">
+                <form action="http://localhost:3000/toupdate">
+                    用户名：<input type="text" name="username"><br><br>
+                    密&nbsp; &nbsp;&nbsp;码：<input type="text" name="user_password"><br><br>
+                    手机号：<input type="text" name="user_tel"><br><br>
+                    年&nbsp; &nbsp;&nbsp;龄：<input type="text" name="user_age"><br><br>
+                    <input type="submit" value="提交">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        ©新乡学院 2017级计算机科学与技术1班 李玉华 指导老师：黄楠
+    </div>
+    <script src="js/select.js"></script>
+</body>
+
+</html>
